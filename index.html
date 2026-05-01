@@ -637,6 +637,7 @@ background-size: cover;
 <meta name="google-adsense-platform-account" content="ca-host-pub-1556223355139109">
 <meta name="google-adsense-platform-domain" content="blogspot.com">
 
+
 <script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer></script>
 <script>
   window.OneSignalDeferred = window.OneSignalDeferred || [];
@@ -644,8 +645,10 @@ background-size: cover;
     await OneSignal.init({
       appId: "e50346a1-4967-4a2e-9664-7498728feb1f",
     });
+    OneSignal.Notifications.requestPermission();
   });
 </script>
+
 </head>
 <body>
 <script type="application/javascript" src="js/ps.js"></script> 
